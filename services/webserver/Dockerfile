@@ -12,8 +12,8 @@ RUN chmod +x /usr/local/bin/template
 ADD ./services/webserver/config/nginx.tmpl /
 
 # Add SSL certs to location specified in nginx.conf
-ADD ./services/webserver/config/*.crt /etc/ssl/certs/
-ADD ./services/webserver/config/*.key /etc/ssl/private/
+#ADD ./services/webserver/config/*.crt /etc/ssl/certs/
+#ADD ./services/webserver/config/*.key /etc/ssl/private/
 
 # Execute start script
 CMD ["./start.sh"]
